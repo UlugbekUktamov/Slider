@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.image img {
+  width: 800px;
+  height: 400px;
+}
+
+.anima {
+  animation-name: image;
+  animation-duration: .7s;
+}
+
+.anima-2 {
+  animation-name: image2;
+  animation-duration: .7s;
+}
+
+@keyframes image {
+  0% {
+    margin-left: 50rem;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes image2 {
+  0% {
+    margin-left: -50rem;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.titles {
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  padding: 10px;
+  color: #fff;
+}
+
+.chiziq i {
+  position: absolute;
+  z-index: 11;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 15px;
+  border-radius: 5px;
+}
+
+.chiziq i:hover {
+  background-color: #000000bb;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.chiziq i:first-child {
+  top: 28%;
+  left: 22%;
+}
+
+.chiziq i:nth-child(2) {
+  top: 28%;
+  right: 23%;
+}
+
+.text {
+  position: absolute;
+  top: 53%;
+  left: 47%;
+  color: #fff;
+  font-size: 18px;
+}
